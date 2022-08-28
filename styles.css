@@ -4,10 +4,11 @@ header {
     background-image: url("image/vietdecor-temenos-offices-archello.1601489689.0238.jpg");
     color: white;
     font-size: 20px;
-    background-position: center top;
+    background-position: 2em;
     }
     h1{
-        font-family: roboto;
+        
         word-spacing: 0.3em;
         letter-spacing: 7px;
+        font-family: 'Mulish', sans-serif;
     }
