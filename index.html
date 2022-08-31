@@ -6,29 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maintenance Team-TAP</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
-<style>
-    .btns{
-        float :left;
-        margin-top: 100px;
-        margin-left: 10px;
-        margin-right : 0.5px;
-        padding : 15px 32px;
-    }
-    .button{
-        background-color :#4CAF50; /* Green*/
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 10px;
-        border-radius: 12px;
-    }
-</style>
 </head>
 <body>
     <header>
@@ -36,35 +17,84 @@
     TAP Maintenance Team - Wealth Suite
     </h1>
     </header>
-<div class='btns' >
-        <button class = "button" > bngtaplx2 </button>
-</div>
-<div class='btns' >
-        <button class = "button" > laulxqasrv2 </button>
-</div>
-<div class='btns' >
-    <button class = "button" > bngtaplx2 </button>
-</div>
-<div class='btns' >
-    <button class = "button" > bngtaplx2 </button>
-</div>
-<div class='btns' >
-    <button class = "button" > bngtaplx2 </button>
-</div>
-<div class='btns' >
-    <button class = "button" > bngtaplx2 </button>
-</div>
-<div class='btns' >
-    <button class = "button" > bngtaplx2 </button>
-</div>
-<div class='btns' >
-    <button class = "button" > bngtaplx2 </button>
-</div>
-<div class='btns' >
-    <button class = "button" > bngtaplx2 </button>
-</div>
-<div class='btns' >
-    <button class = "button" > bngtaplx2 </button>
-</div>
-</body>
+    <section class="flex-container">
+        <button class = "button" href="www.google.com"> All </button>
+        <button class = "button" href="www.google.com"> bngtaplx2 </button>
+        <button class = "button"  href="www.google.com" > laulxqasrv2 </button>
+        <button class = "button" href="www.google.com"> bngtaplx2 </button>
+        <button class = "button"  href="www.google.com"> laulxqasrv2 </button>
+        <button class = "button" href="www.google.com"> bngtaplx2 </button>
+        <button class = "button"  href="www.google.com"> laulxqasrv2 </button>
+        <button class = "button" href="www.google.com"> bngtaplx2 </button>
+        <button class = "button"  href="www.google.com"> laulxqasrv2 </button>
+        <button class = "button" href="www.google.com"> bngtaplx2 </button>
+        <button class = "button"  href="www.google.com"> laulxqasrv2 </button>
+    </section>
+    <footer>
+        <div class="main-content">
+          <div class="left box">
+            <h2 style="color:white">About</h2>
+            <div class="content">
+              <p style="color:white"> Internal environment details webapp for Temenos
+              </p>
+            </div>
+          </div>
+          <div class="center box">
+            <h2 style="color:white">Address</h2>
+            <div class="content">
+              <div class="place">
+                <span class="fas fa-map-marker-alt" style="color:white"></span>
+                <span class="text" style="color:white">11th Floor , Block D , IBC Knowledge Park
+              </div>
+              <div class="phone">
+                <span class="fas fa-phone-alt" style="color:white"></span>
+                <span class="text" style="color:white">080 4137 6000</span>
+              </div>
+            </div>
+          </div>
+          <div class="right box">
+            <h2 style="color:white">Contact us</h2>
+            <div class="content">
+              <form action="#" onsubmit="sendEmail()">
+                <div class="email">
+                  <div class="text" >Email *</div>
+                  <input type="email" required>
+                </div>
+                <div class="msg">
+                  <div class="text">Message *</div>
+                  <textarea rows="2" cols="25" required></textarea>
+                </div>
+                <div class="btn">
+                  <button type="submit">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <center>
+            <span class="credit" style="color:white">Created with &hearts; by Rohit and Sudipto | </span>
+            <span class="far fa-copyright" style="color:white"></span><span style="color:white"> 2022 All rights reserved.</span>
+          </center>
+        </div>
+      </footer>
+      <script src= "https://smtpjs.com/v3/smtp.js"></script>
+ 
+    <script type="text/javascript">
+        function sendEmail() {
+    Email.send({
+      Host: "smtp.gmail.com",
+      Username: "sender@email_address.com",
+      Password: "Enter your password",
+      To: 'receiver@email_address.com',
+      From: "sender@email_address.com",
+      Subject: "Sending Email using javascript",
+      Body: "Well that was easy!!",
+    })
+      .then(function (message) {
+        alert("mail sent successfully")
+      });
+  }
+  </script>
+    </body>
 </html>
