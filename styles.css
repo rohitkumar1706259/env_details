@@ -12,7 +12,7 @@ header {
         letter-spacing: 7px;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
-    .button{
+    .btn{
         background-color :navy; /* Green*/
         border: none;
         color: white;
@@ -33,7 +33,7 @@ header {
         background-color:navy; /* Green */
         color: white;
       }
-    .flex-container{
+    #myBtnContainer{
         background-color:white;
         margin-top: 10px;
         display : flex;
@@ -169,7 +169,7 @@ header {
         }
       }
       
-      .env_grid{
+      .container{
 
         background-color:white;
        
@@ -182,9 +182,17 @@ width: 60%;
 -moz-border-radius:10px;
 border: 2px dotted blue;
 }
-.row{
+.inner-div{
 
-display: flex;
+  display: flex;
+  justify-content: space-evenly;
+  background: #A0C5E8;
+  padding: 5px 0;  
+  
+}
+.filterDiv{
+
+display: none;
 justify-content: space-evenly;
 background: #A0C5E8;
 padding: 5px 0;  
@@ -203,4 +211,33 @@ background: whitesmoke;
 footer{
     margin-top: 10px;
     background-color: navy;
+}
+.show {
+  display: block;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+.env-link{
+  background-color :navy; /* Green*/
+  border: none;
+  color: white;
+  padding:20px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 12px;
+  margin-left: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  width: 15%;
+
 }

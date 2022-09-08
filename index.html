@@ -17,68 +17,57 @@
     TAP Maintenance Team - Wealth Suite
     </h1>
     </header>
-    <section class="flex-container">
-        <button class = "button"> Show All </button>
-        <button class = "button"> bngtaplx2 </button>
-        <button class = "button"> laulxval1 </button>
-        <button class = "button"> laulxval2 </button>
-        <button class = "button"> laulxval3</button>
-        <button class = "button"> laulxval4 </button>
-        <button class = "button"> laulxval5 </button>
-    </section>
+    <section id="myBtnContainer">
+        <button class = "btn active" onclick="filterSelection('all')""> Show All </button>
+        <button class = "btn" onclick="filterSelection('colors')"> bngtaplx2 </button>
+        <button class = "btn" onclick="filterSelection('cars')"> laulxval1 </button>
+          </section>
 
-    <div class="env_grid">
-        <div class="rowHead">
-            <h2>ENV NAME</h2>&nbsp &nbsp
-            <h2>HOST</h2>&nbsp&nbsp
-            <h2>OCS LINK</h2>&nbsp &nbsp
-            <h2>WSC LINK</h2>&nbsp&nbsp            
-        </div>
-        <div class="row">
+    <div class="container">
+      <div class="rowHead">
+        <h2>ENV NAME</h2>&nbsp &nbsp
+        <h2>HOST</h2>&nbsp&nbsp
+        <h2>OCS LINK</h2>&nbsp &nbsp
+        <h2>WSC LINK</h2>&nbsp&nbsp            
+    </div>
+        <div class="filterDiv cars">
+          <div class="inner-div">
             <h2>V_BNG_OTA_1</h2>&nbsp &nbsp
             <h2>bngtaplx2</h2>&nbsp&nbsp
-            <button class="button">ocs</button>
-            <button class="button">wsc</button>
+            <button class="env-link">ocs</button>
+            <button class="env-link">wsc</button>
         </div>
-        <div class="row">
-            <h2>V_BNG_OTA_2</h2>&nbsp &nbsp
-            <h2>bngtaplx2</h2>&nbsp&nbsp
-            <button class="button">ocs</button>
-            <button class="button">wsc</button>
+      </div>
+
+        <div class="filterDiv colors">
+          <div class="inner-div">
+            <h2>V_REG_ORA_2</h2>&nbsp &nbsp
+            <h2>laulxval1</h2>&nbsp&nbsp
+            <button class="env-link">ocs</button>
+            <button class="env-link">wsc</button>
         </div>
-        <div class="row">
-            <h2>V_BNG_OTA_2</h2>&nbsp &nbsp
-            <h2>bngtaplx2</h2>&nbsp&nbsp
-            <button class="button">ocs</button>
-            <button class="button">wsc</button>
-        </div>
-        <div class="row">
-            <h2>V_BNG_OTA_2</h2>&nbsp &nbsp
-            <h2>bngtaplx2</h2>&nbsp&nbsp
-            <button class="button">ocs</button>
-            <button class="button">wsc</button>
-        </div>
-        <div class="row">
-            <h2>V_BNG_OTA_2</h2>&nbsp &nbsp
-            <h2>bngtaplx2</h2>&nbsp&nbsp
-            <button class="button">ocs</button>
-            <button class="button">wsc</button>
-        </div>
-        <div class="row">
-            <h2>V_BNG_OTA_2</h2>&nbsp &nbsp
-            <h2>bngtaplx2</h2>&nbsp&nbsp
-            <button class="button">ocs</button>
-            <button class="button">wsc</button>
-        </div>
-        <div class="row">
-            <h2>V_BNG_OTA_2</h2>&nbsp &nbsp
-            <h2>bngtaplx2</h2>&nbsp&nbsp
-            <button class="button">ocs</button>
-            <button class="button">wsc</button>
-        </div>
+      </div>
+      <div class="filterDiv cars">
+        <div class="inner-div">
+          <h2>V_BNG_OTA_1</h2>&nbsp &nbsp
+          <h2>bngtaplx2</h2>&nbsp&nbsp
+          <button class="env-link">ocs</button>
+          <button class="env-link">wsc</button>
+      </div>
     </div>
 
-    <footer>
+      <div class="filterDiv colors">
+        <div class="inner-div">
+          <h2>V_REG_ORA_2</h2>&nbsp &nbsp
+          <h2>laulxval1</h2>&nbsp&nbsp
+          <button class="env-link">ocs</button>
+          <button class="env-link">wsc</button>
+      </div>
+    </div>
+    </div>
+
+      <script src="index.js"></script>
+      <footer>
         <div class="main-content">
           <div class="left box">
             <h2 style="color:white">About</h2>
@@ -127,7 +116,5 @@
         </div>
       </footer>
       
- 
-  
-    </body>
+    
 </html>
